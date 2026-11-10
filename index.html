@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العدل العقاري والاستشاري | رؤية أوضح لقرارك العقاري</title>
+    <meta name="description" content="استشارات عقارية، تسويق احترافي، وإنجاز معاملات في حمص، سوريا. رؤية أوضح لاتخاذ القرار العقاري الصحيح.">
+    
+    <!-- خط Tajawal من جوجل -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0B1E36',    // الأزرق الداكن (الشعار)
+                        gold: '#C5A059',    // الذهبي (الشعار)
+                        light: '#F8F9FA'    // لون الخلفية الفاتح
+                    },
+                    fontFamily: {
+                        sans: ['Tajawal', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* تمرير سلس */
+        html { scroll-behavior: smooth; }
+        /* تأثير الزجاج للشريط العلوي */
+        .glass-nav {
+            background: rgba(11, 30, 54, 0.95);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-light antialiased">
+
+    <!-- 1. الشريط العلوي (Navbar) -->
+    <nav class="fixed w-full z-50 glass-nav text-white shadow-lg transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- الشعار -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-navy border-2 border-gold rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-scale-balanced text-gold text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl tracking-wide">العدل العقاري</h1>
+                        <p class="text-xs text-gray-300">والاستشاري</p>
+                    </div>
+                </div>
+                
+                <!-- روابط الديسكتوب -->
+                <div class="hidden md:flex space-x-8 space-x-reverse font-medium">
+                    <a href="#home" class="hover:text-gold transition">الرئيسية</a>
+                    <a href="#services" class="hover:text-gold transition">خدماتنا</a>
+                    <a href="#about" class="hover:text-gold transition">من نحن</a>
+                    <a href="#contact" class="hover:text-gold transition">تواصل معنا</a>
+                </div>
+
+                <!-- زر الاتصال السريع -->
+                <a href="tel:+963933872724" class="hidden md:flex items-center gap-2 bg-gold hover:bg-yellow-600 text-navy font-bold py-2 px-6 rounded-full transition duration-300">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>اتصل الآن</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. قسم البطل (Hero Section) -->
+    <section id="home" class="relative h-screen flex items-center justify-center pt-20">
+        <!-- صورة الخلفية مع طبقة تعتيم -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="عقارات" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-navy opacity-80"></div>
+        </div>
+        
+        <!-- المحتوى -->
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-gold/20 text-gold border border-gold/30 font-semibold mb-6">
+                خدمة محلية موثوقة في حمص
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6">
+                رؤية أوضح لاتخاذ <span class="text-gold">القرار العقاري</span> الصحيح
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                نقدم لك استشارات عقارية متكاملة، تسويق احترافي، وإنجاز معاملات بكل شفافية واحترافية. ثقتكم تبني قراراتنا.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-gold hover:bg-yellow-600 text-navy font-bold text-lg py-4 px-8 rounded-full transition duration-300 shadow-lg shadow-gold/30">
+                    احجز استشارتك الآن
+                </a>
+                <a href="https://wa.me/963933872724" target="_blank" class="bg-transparent border-2 border-white hover:bg-white hover:text-navy text-white font-bold text-lg py-4 px-8 rounded-full transition duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    تواصل واتساب
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. شريط الثقة (Trust Bar) -->
+    <section class="bg-navy py-8 border-b border-gold/30">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+            <div>
+                <p class="text-3xl font-bold text-gold mb-1">+17K</p>
+                <p class="text-sm text-gray-300">متابع يثق بنا</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-gold mb-1">4.0</p>
+                <p class="text-sm text-gray-300 flex items-center justify-center gap-1">
+                    <i class="fa-solid fa-star text-xs"></i> تقييم العملاء
+                </p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-gold mb-1">100%</p>
+                <p class="text-sm text-gray-300">شفافية وموثوقية</p>
+            </div>
+            <div>
+                <p class="text-3xl font-bold text-gold mb-1">24/7</p>
+                <p class="text-sm text-gray-300">دعم واستشارات</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. الخدمات (Services) -->
+    <section id="services" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">خدماتنا المتكاملة</h2>
+                <div class="w-24 h-1 bg-gold mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">نغطي جميع احتياجاتك العقارية والقانونية لضمان معاملات سلسة وآمنة.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- خدمة 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold transition duration-300">
+                        <i class="fa-solid fa-building text-2xl text-gold group-hover:text-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">استشارات عقارية</h3>
+                    <p class="text-gray-600 leading-relaxed">نساعدك في تقييم العقارات، دراسات الجدوى، واختيار أفضل الفرص الاستثمارية التي تناسب ميزانيتك.</p>
+                </div>
+                <!-- خدمة 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold transition duration-300">
+                        <i class="fa-solid fa-bullhorn text-2xl text-gold group-hover:text-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">تسويق احترافي</h3>
+                    <p class="text-gray-600 leading-relaxed">نضمن لك تسويق عقارك بأفضل صورة للوصول إلى المشترين الجادين بأسرع وقت وبأعلى قيمة ممكنة.</p>
+                </div>
+                <!-- خدمة 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 border border-gray-100 group">
+                    <div class="w-16 h-16 bg-navy rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold transition duration-300">
+                        <i class="fa-solid fa-file-signature text-2xl text-gold group-hover:text-navy transition"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">إنجاز معاملات</h3>
+                    <p class="text-gray-600 leading-relaxed">نتولى عنك كافة الإجراءات القانونية والورقية لضمان نقل الملكية أو تسجيل العقار بكل سهولة وأمان.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. من نحن (About) -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop" alt="فريق العمل" class="rounded-2xl shadow-lg w-full object-cover h-[400px]">
+                        <div class="absolute -bottom-6 -left-6 bg-gold p-6 rounded-xl shadow-lg hidden md:block">
+                            <p class="text-navy font-bold text-xl"><i class="fa-solid fa-check-circle ml-2"></i> ثقة.. تبني قرارك</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-navy mb-6">لماذا تختار "العدل العقاري والاستشاري"؟</h2>
+                    <p class="text-gray-600 text-lg mb-6 leading-relaxed">
+                        في سوق العقارات المتغير، نحن نؤمن أن العميل يحتاج إلى شريك موثوق قبل أن يحتاج إلى وسيط. نضع خبرتنا القانونية والعقارية بين يديك لتجنب المخاطر واتخاذ قرارات مدروسة.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i class="fa-solid fa-circle-check text-gold text-xl"></i> شفافية كاملة في التعاملات المالية والقانونية.
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i class="fa-solid fa-circle-check text-gold text-xl"></i> فريق متخصص يعرف سوق حمص والمناطق المجاورة.
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-700 font-medium">
+                            <i class="fa-solid fa-circle-check text-gold text-xl"></i> متابعة دقيقة لكل التفاصيل حتى إتمام المعاملة.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. نموذج التواصل (Contact / Lead Gen) -->
+    <section id="contact" class="py-20 bg-navy relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- معلومات الاتصال -->
+                <div class="text-white">
+                    <h2 class="text-3xl font-bold mb-6">جاهز لبدء خطوتك القادمة؟</h2>
+                    <p class="text-gray-300 mb-8 text-lg">اترك بياناتك وسنقوم بالتواصل معك في أقرب وقت لتقديم الاستشارة التي تحتاجها.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">موقعنا</h4>
+                                <p class="text-gray-300">حمص، الحضارة، شارع الشهداء</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">اتصل بنا</h4>
+                                <p class="text-gray-300" dir="ltr">+963 933 872 724</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-gold text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg">البريد الإلكتروني</h4>
+                                <p class="text-gray-300">aladl.realestate.syria@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- النموذج -->
+                <div class="bg-white p-8 rounded-2xl shadow-2xl">
+                    <h3 class="text-2xl font-bold text-navy mb-6 text-center">طلب استشارة سريعة</h3>
+                    <form id="whatsappForm" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">الاسم الكامل</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition" placeholder="أدخل اسمك">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">رقم الهاتف / واتساب</label>
+                            <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition" placeholder="مثال: 0933872724" dir="ltr">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">نوع الخدمة المطلوبة</label>
+                            <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition bg-white">
+                                <option value="استشارة عقارية">استشارة عقارية</option>
+                                <option value="تسويق عقار">تسويق عقار</option>
+                                <option value="إنجاز معاملة">إنجاز معاملة</option>
+                                <option value="أخرى">أخرى</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">رسالتك (اختياري)</label>
+                            <textarea id="message" rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-gold focus:border-gold outline-none transition" placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center gap-2 text-lg">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            إرسال الطلب عبر واتساب
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. التذييل (Footer) -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-scale-balanced text-gold text-xl"></i>
+                <span class="text-white font-bold text-lg">العدل العقاري والاستشاري</span>
+            </div>
+            <p class="text-sm">© 2024 جميع الحقوق محفوظة. صُمم لخدمتكم بكل احترافية.</p>
+            <div class="flex gap-4 text-xl">
+                <a href="https://wa.me/963933872724" target="_blank" class="hover:text-gold transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="mailto:aladl.realestate.syria@gmail.com" class="hover:text-gold transition"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+963933872724" class="hover:text-gold transition"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر واتساب عائم (Floating Button) -->
+    <a href="https://wa.me/963933872724" target="_blank" class="fixed bottom-6 left-6 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition duration-300 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- سكريبت تحويل بيانات النموذج إلى واتساب -->
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // رقم الواتساب الخاص بك (بدون علامة +)
+            const myPhone = "963933872724"; 
+            
+            // صياغة الرسالة
+            const text = `مرحباً العدل العقاري والاستشاري،%0A%0Aأنا: ${name}%0Aرقم هاتفي: ${phone}%0Aالخدمة المطلوبة: ${service}%0Aرسالتي: ${message || 'لا يوجد'}`;
+            
+            // فتح واتساب
+            window.open(`https://wa.me/${myPhone}?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
